@@ -20,6 +20,8 @@ To Visit App:
 
 localhost:3000
 
+https://sbindushree-code-test.netlify.app
+
 ## Reflection
 
 This project was created for a code test in my free time in one day.

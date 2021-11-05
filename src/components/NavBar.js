@@ -17,7 +17,7 @@ function NavBar() {
   };
   const closeMobileMenu = () => {
     setMenuClick(false);
-    document.body.classList.toggle("lock-scroll");
+    document.body.classList.remove("lock-scroll");
   }
 
   const showButton = () => {
