@@ -1,0 +1,54 @@
+@import "../scss-variables.scss";
+.footer-conatiner {
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  background-color: $blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-txt {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  color: $gray;
+  font-size: 1.25rem;
+  span {
+    color: $orange;
+  }
+  li {
+    padding-right: 10px;
+  }
+}
+.footer-app-logo {
+  width: 120px;
+  height: 50px;
+}
+@media screen and (max-width: 960px) {
+  .footer-app-logo {
+    width: 90px;
+  }
+  .footer-txt {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-conatiner {
+    height: 220px;
+    //    margin-top: 200px;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .footer-txt {
+    flex-direction: column;
+    justify-content: center;
+    li {
+      padding-bottom: 6px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+$blue: #0E3757;
+$orange: #F56A75;
+$dark_gray:#8D9CA8;
+$gray:#EEEEEE;
+$red:#D0021B;
+$light: 300;
+$regular: 400;
+$medium: 500;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

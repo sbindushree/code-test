@@ -1,0 +1,14 @@
+.home,
+.about-us,
+.about-you,
+.portfolio,
+.contact {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.home-wrapper {
+  position: relative;
+}

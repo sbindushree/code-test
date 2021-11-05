@@ -1,0 +1,127 @@
+@import "../scss-variables.scss";
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 15% 40px;
+  height: calc(100vh - 180px);
+}
+.contact-section {
+  text-align: center;
+  max-width: 750px;
+  margin-bottom: 5%;
+}
+.contact-title {
+  font-size: 3.1rem;
+  padding: 10px;
+}
+.contact-desc {
+  font-size: 1.5rem;
+  font-weight: $light;
+  color: $dark-gray;
+}
+.form-component {
+  width: 70%;
+  left: 15%;
+  max-width: 600px;
+}
+label,
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: $light;
+  padding: 10px 10px;
+}
+label {
+  padding: 5px 0px;
+  color: $blue;
+}
+input {
+  padding: 8px 20px;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border: 2px solid $gray;
+}
+textarea {
+  height: 160px;
+  resize: none;
+  border: 2px solid $gray;
+}
+form a {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+  text-decoration: none;
+}
+form .btn {
+  background-color: $blue;
+  border: 1px solid $blue;
+  width: 120px;
+  &:hover {
+    background-color: white;
+    color: $blue;
+  }
+}
+
+input:required:valid,
+textarea:required:valid {
+  border-color: $blue;
+}
+
+::placeholder {
+  color: $gray;
+  opacity: 1; 
+}
+:-ms-input-placeholder {
+  color: $gray;
+}
+
+::-ms-input-placeholder {
+  color: $gray;
+}
+
+.error{
+    color:$red;
+    font-size:0.9rem;
+    font-weight: $light;
+}
+@media screen and (max-width: 960px) {
+  .contact-section {
+    margin-bottom: 20px;
+  }
+  .contact-title {
+    font-size: 2.5rem;
+  }
+  .contact-desc {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    padding: 20px 10px;
+    height: unset;
+  }
+  .form-component {
+    width: calc(100% - 10px);
+    left: 5px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    padding: 10px 0;
+  }
+  .contact-desc {
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+  form .btn {
+    width: 100%;
+  }
+}
